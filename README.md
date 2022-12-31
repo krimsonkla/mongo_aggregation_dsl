@@ -1,7 +1,13 @@
 # mongo_aggregation_dsl
 
-This gem provides a basic implementation of a mongo aggregation dsl. It is by no means complete.
+Mongo Aggregation DSL provides a custom dsl for writing mongo aggregations. It makes use of the contracts-lite gem in order to provide run time validation of of stages prior to the commands being executed against a mongo db server.
 
+Written by Jason Risch for Cardtapp LLC
+
+![CircleCI](https://img.shields.io/circleci/build/github/krimsonkla/mongo_aggregation_dsl?token=93f6e6dbdeff146992116c0b8bebef6140aa1dbf)
+[![codecov](https://codecov.io/gh/CardTapp/mongo_aggregation_dsl/branch/master/graph/badge.svg?token=1lZTEOUTOo)](https://codecov.io/gh/CardTapp/mongo_aggregation_dsl)
+[![Maintainability](https://api.codeclimate.com/v1/badges/0b45156e06c82bd954ca/maintainability)](https://codeclimate.com/github/krimsonkla/mongo_aggregation_dsl/maintainability)
+![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/krimsonkla/mongo_aggregation_dsl)
 ## Installation
 
 Add this line to your application's Gemfile:

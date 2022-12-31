@@ -2,7 +2,9 @@
 #
 # Check https://circleci.com/docs/2.0/language-ruby/ for more details
 #
-version: 2
+version: 2.1
+orbs:
+  codecov: codecov/codecov@1.0.2
 jobs:
   build:
     docker:
@@ -60,3 +62,6 @@ jobs:
       - store_artifacts:
           path: /tmp/test-results
           destination: test-results
+      - codecov/upload:
+          file: './coverage/codecov-result.json'
+          token: a7a5df63-codcov-token-4278vh38
