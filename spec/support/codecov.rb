@@ -10,6 +10,4 @@ if ENV["CI"] == "true"
   end
   require "codecov"
   SimpleCov.formatter = SimpleCov::Formatter::Codecov
-  Dir["lib/**/*.rb"].each { |file| load(file); }
-  Dir["bin/**/*.rb"].each { |file| load(file); }
 end
